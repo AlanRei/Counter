@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(10)
 
   const handleOpenCounter = () => {
     setIsOpen(true)
@@ -20,7 +20,7 @@ export default function Home() {
   }
 
   const handleRemoveCounter = () => {
-    if (counter > 0) {
+    if (counter > 1) {
       setCounter(counter - 1)
     }
   }

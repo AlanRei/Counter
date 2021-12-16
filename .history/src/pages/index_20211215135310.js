@@ -9,20 +9,12 @@ export default function Home() {
     setIsOpen(true)
   }
 
-  const handleCloseCounter = () => {
-    setIsOpen(false)
-  }
-
   const handleAddCounter = () => {
-    if (counter < 100) {
-      setCounter(counter + 1)
-    }
+    setCounter(counter + 1)
   }
 
   const handleRemoveCounter = () => {
-    if (counter > 0) {
-      setCounter(counter - 1)
-    }
+    setCounter(counter - 1)
   }
 
   return (
@@ -32,10 +24,7 @@ export default function Home() {
       </Head>
       <h1>App - Counter</h1>
 
-      {isOpen && <button onClick={handleCloseCounter}>Fechar contador</button>}
-
-      {!isOpen && <button onClick={handleOpenCounter}>Abrir o contador</button>}
-
+      <button onClick={handleOpenCounter}>Abrir o contador</button>
       {isOpen && (
         <button onClick={handleAddCounter}>Adicionar ao contador</button>
       )}

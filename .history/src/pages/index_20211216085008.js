@@ -20,9 +20,7 @@ export default function Home() {
   }
 
   const handleRemoveCounter = () => {
-    if (counter > 0) {
-      setCounter(counter - 1)
-    }
+    setCounter(counter - 1)
   }
 
   return (

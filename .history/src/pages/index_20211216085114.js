@@ -14,13 +14,13 @@ export default function Home() {
   }
 
   const handleAddCounter = () => {
-    if (counter < 100) {
-      setCounter(counter + 1)
+    if (counter < 101) {
+      setCounter(counter + 10)
     }
   }
 
   const handleRemoveCounter = () => {
-    if (counter > 0) {
+    if (counter > 1) {
       setCounter(counter - 1)
     }
   }
